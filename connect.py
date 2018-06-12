@@ -9,7 +9,6 @@ cur.execute("SELECT PHOTOGRAPH_IMG FROM IHHL_DETAIL_IMG WHERE APPLICATION_ID='KA
 result=cur.fetchall()
 result=list(result)
 print result[0]
-#cur.execute("insert into TEST values (001, %s);", result[0])
 cur.close()
 con.close()
 
