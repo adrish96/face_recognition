@@ -87,7 +87,7 @@ def test_prediction(path):
         predict(img)
 
 
-faces, labels = prep_training_data('sampl\\dataset_1')
+faces, labels = prep_training_data('  ')
 print('total images', len(faces))
 print('total labels',len(labels))
 
