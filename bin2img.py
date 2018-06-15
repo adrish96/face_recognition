@@ -1,3 +1,9 @@
+'''
+encoding and decoding an image into 'base64' encoded string
+for transfering the image over a network or storing in a database
+'''
+
+
 import base64
 import os
 
