@@ -1,8 +1,15 @@
+#################################################################################
+#  This will connect to the database and update the AppicantMatch_Status column.
+#  To do this it willaccess the images stored in the folders and match them
+#  according to their applicationID's. If the Application ID returned by the
+#  recogniser is the same then they are a match else they're not.
+#################################################################################
+
+
 import numpy as np
 import cv2
 import os
 import pymssql
-
 
 subjects=[]
 subjects.append("")
