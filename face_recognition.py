@@ -5,7 +5,7 @@ import os
 #face_cascade_Haar=cv2.CascadeClassifier('C:\\Users\\nic 005\\Downloads\\opencv\\sources\\data\\haarcascades\\haarcascade_frontalface_default.xml')
 #face_cascade_LBP=cv2.CascadeClassifier('C:\\Users\\nic 005\\Downloads\\opencv\\sources\\data\\lbpcascades\\lbpcascade_frontalface.xml')
 
-subjects=["","abc","amitabh","anonym1","anonym1.1","anonym2.1","cwang.1","doraj.1","parmendera sir","virat"]
+subjects=["","amitabh","modi","parmendera sir","virat"]
 
 def face_detection(img):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -87,14 +87,14 @@ def test_prediction(path):
         predict(img)
 
 
-faces, labels = prep_training_data('  ')
+faces, labels = prep_training_data('testing\\training\\')
 print('total images', len(faces))
 print('total labels',len(labels))
 
 face_recognizer= cv2.face.LBPHFaceRecognizer_create()
 face_recognizer.train(faces, np.array(labels))
 
-test_prediction('sampl\\test_1')
+test_prediction('testing\\testing\\')
 '''
 test_img=cv2.imread('C:\\Users\\nic 005\\Desktop\\face_recognition\\db\\testing\\doraj.20.jpg')
 predicted_img=predict(test_img)

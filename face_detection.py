@@ -18,7 +18,7 @@ face_cascade_Haar=cv2.CascadeClassifier('C:\\Users\\nic 005\\Downloads\\opencv\\
 face_cascade_LBP=cv2.CascadeClassifier('C:\\Users\\nic 005\\Downloads\\opencv\\sources\\data\\lbpcascades\\lbpcascade_frontalface.xml')
 
 #loading the image
-img=cv2.imread('imageToSave1.png')
+img=cv2.imread('parmendra sir.JPG')
 
 #chage parameters for different classifier
 detected_img=face_detection(face_cascade_Haar, img)
