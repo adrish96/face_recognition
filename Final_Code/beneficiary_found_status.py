@@ -33,7 +33,7 @@ def beneficiary_found_status(path):
             continue
         l=len(dir_names)
         image_type=dir_names[l-5:]
-        if (image_type != '.jpeg'):
+        if (image_type != '.jpeg'):                           #skipping images which are not jpeg type
             print "skipping file ",dir_names
             continue
         app_id=dir_names[:12]
@@ -58,7 +58,5 @@ images_detected, images_not_detected=beneficiary_found_status('details_ph_ii\\')
 
 print "faces detected=",images_detected
 print "faces not detected=",images_not_detected
-accuracy= images_detected/1996
-print "accuracy=",accuracy
 
 
