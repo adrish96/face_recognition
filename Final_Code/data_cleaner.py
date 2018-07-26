@@ -1,6 +1,6 @@
 ##############################################################
 #  This will delete all the images which are not jpeg type.  #
-#  This accounts for less than 1% of the total database      #
+#  This accounts for less than 1% of the total dataset.      #
 ##############################################################
 
 
